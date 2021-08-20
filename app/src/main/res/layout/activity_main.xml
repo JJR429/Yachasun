@@ -27,7 +27,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView1"
+                android:id="@+id/imageViewUser"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:src="@drawable/dog_icon" />
@@ -96,7 +96,7 @@
                     android:textSize="12sp" />
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/imageViewLevel1"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:src="@drawable/turtle_icon" />
@@ -133,7 +133,7 @@
                     android:textSize="12sp" />
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/imageViewLevel2"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:src="@drawable/puma_icon" />
@@ -169,7 +169,7 @@
                     android:textSize="12sp" />
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/imageViewLevel3"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:src="@drawable/eagle_icon" />
@@ -205,7 +205,7 @@
                     android:textSize="12sp" />
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/imageViewLevel4"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:src="@drawable/shield_icon" />
@@ -233,7 +233,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/imageViewPremio"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:src="@drawable/medal_icon" />
@@ -248,15 +248,40 @@
         </LinearLayout>
     </LinearLayout>
 
-    <FrameLayout
-        android:id="@+id/fragmentContainer"
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="220dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
-    </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Empieza a leer y gana puntos y regalos para ti y tu mascota."
+            android:textColor="@color/textWhite"
+            android:textSize="12sp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

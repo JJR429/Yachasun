@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:screenOrientation="landscape"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        android:theme="@style/AppTheme">
+<!--        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"-->
         <activity android:name=".Store"></activity>
         <activity android:name=".Profile" />
         <activity android:name=".Register" />

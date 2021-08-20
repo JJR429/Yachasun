@@ -11,4 +11,7 @@
     <string name="main_txt_puntos_2">51 - 200</string>
     <string name="main_txt_puntos_3">201 - 500</string>
     <string name="main_txt_puntos_4">+500</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
