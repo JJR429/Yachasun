@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Yachasun</string>
+    <string name="main_txt_user">User</string>
+    <string name="main_txt_user_puntos_txt">Puntos</string>
+    <string name="main_txt_nivel1">Nivel 1</string>
+    <string name="main_txt_nivel2">Nivel 2</string>
+    <string name="main_txt_nivel3">Nivel 3</string>
+    <string name="main_txt_nivel4">Superior</string>
+    <string name="main_txt_premios">Premios</string>
+    <string name="main_txt_puntos_1">0 - 50</string>
+    <string name="main_txt_puntos_2">51 - 200</string>
+    <string name="main_txt_puntos_3">201 - 500</string>
+    <string name="main_txt_puntos_4">+500</string>
+</resources>
