@@ -1,16 +1,20 @@
 package com.cappstudios.yachasun.fragments
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.cappstudios.yachasun.R
+import com.cappstudios.yachasun.ToRead
 import kotlinx.android.synthetic.main.card_view_book.view.*
-import kotlinx.android.synthetic.main.fragment_level_1.view.*
 
-class BookAdapter (
+
+class BookAdapter(
     private val data: List<BookObject>
 ): RecyclerView.Adapter<BookAdapter.ViewHolder>() {
 
@@ -28,7 +32,16 @@ class BookAdapter (
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.tvTitle.text = data[position].title
-
+        holder.bookCover.setImageResource(R.drawable.medal_icon)
+        val book_cod = data[position].cod_book
+        Toast.makeText(holder.card.context, ("Index: $position"), Toast.LENGTH_SHORT).show()
+        //here set data
+        holder.card.setOnClickListener{
+            val toread = Intent(holder.card.context, ToRead::class.java)
+            toread.putExtra("index", position)
+            toread.putExtra("cod_book", book_cod)
+            holder.card.context.startActivity(toread)
+        }
         items.add(holder.card)
     }
 
@@ -40,6 +53,8 @@ class BookAdapter (
         itemView: View
     ) : RecyclerView.ViewHolder(itemView) {
         val tvTitle: TextView = itemView.textViewTitleBook
+        val bookCover: ImageView = itemView.ImgBookCover
         val card: CardView = itemView.card
     }
+
 }

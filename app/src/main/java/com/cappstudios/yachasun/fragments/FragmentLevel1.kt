@@ -1,5 +1,6 @@
 package com.cappstudios.yachasun.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.cappstudios.yachasun.R
+import com.cappstudios.yachasun.ToRead
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -48,14 +50,16 @@ class FragmentLevel1 : Fragment() {
 //
 //        return view1
         val rootView: View = inflater.inflate(R.layout.fragment_level_1, container, false)
+        
 //        textHola = rootView.findViewById<View>(R.id.textViewHola) as TextView
         rvlevel1 = rootView.findViewById<View>(R.id.rvlevel1) as RecyclerView
 
 //        textHola!!.setText("Hola Desde Fragement!!")
         val data : MutableList<BookObject> = ArrayList()
         for (i:Int in 1..5)
-            data.add(BookObject(title = "Libro $i"))
-        val layoutManager = LinearLayoutManager(activity,LinearLayoutManager.HORIZONTAL, false)
+            data.add(BookObject("Libro $i","book_00$i","BCUZ00$i",1,"book_00$i"))
+        val layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
+
         val adapter = BookAdapter(data)
         rvlevel1!!.layoutManager = layoutManager
         rvlevel1!!.setHasFixedSize(true)
