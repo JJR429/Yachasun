@@ -19,25 +19,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/EmailEditText"
+        <AutoCompleteTextView
+            android:id="@+id/NickNameEditText"
             android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Email"
-            android:inputType="textEmailAddress" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
-
-        <EditText
-            android:id="@+id/PasswordEditText"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword" />
+            android:layout_height="30dp"
+            android:background="@color/textWhite"
+            android:hint="Id"
+            android:textColor="#161616" />
 
         <Space
             android:layout_width="match_parent"
@@ -52,7 +40,7 @@
 
             <Button
                 android:id="@+id/SingUpButton"
-                android:layout_width="100dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Registrarse" />
@@ -63,8 +51,8 @@
                 android:layout_weight="1" />
 
             <Button
-                android:id="@+id/LogOutButton"
-                android:layout_width="100dp"
+                android:id="@+id/LogInButton"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Acceder" />

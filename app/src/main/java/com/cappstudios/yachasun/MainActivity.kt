@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.cappstudios.yachasun.fragments.*
+import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,8 +39,23 @@ class MainActivity : AppCompatActivity() {
             replaceFragment(FragmentLevel4())
         }
 
+        //setup
+        val bundle:Bundle?=intent.extras
+        val nickname:String?=bundle?.getString("nickname")
+        //val provider:String?=bundle?.getString("provider")
+        setup(nickname ?: "")
     }
+    private fun setup(nickname:String){
+        Usuario.text=nickname
 
+        //cerrar cesion
+        /*logOutButton.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            onBackPressed()
+            }
+
+         */
+    }
     private fun replaceFragment(fragment: Fragment) {
 
         val fmanager: FragmentManager = supportFragmentManager
