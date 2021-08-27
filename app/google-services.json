@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "456038211506",
+    "project_id": "yachasun-1fbc3",
+    "storage_bucket": "yachasun-1fbc3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456038211506:android:8b87ab0c1fc24c04ea0eab",
+        "android_client_info": {
+          "package_name": "com.cappstudios.yachasun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456038211506-vrujf0vd1uejf4rcf7e3tu2ptr3gr9kl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6qmXKX-JjRsCgRmbqwjgvJrlV8CcBIBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456038211506-vrujf0vd1uejf4rcf7e3tu2ptr3gr9kl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

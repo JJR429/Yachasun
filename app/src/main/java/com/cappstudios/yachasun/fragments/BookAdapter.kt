@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.cappstudios.yachasun.R
 import com.cappstudios.yachasun.ToRead
 import kotlinx.android.synthetic.main.card_view_book.view.*
+import java.util.*
 
 
 class BookAdapter(

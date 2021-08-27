@@ -9,8 +9,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
         android:orientation="horizontal"
         android:paddingTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,18 +27,19 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageViewUser"
+                android:id="@+id/imagViewProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:src="@drawable/dog_icon" />
 
             <TextView
-                android:id="@+id/textView1"
+                android:id="@+id/Usuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/main_txt_user"
-                android:textColor="@color/textWhite" />
+                android:hint="Usuario"
+                android:textColor="@color/textWhite"
+                android:textColorHint="@color/textWhite" />
 
             <LinearLayout
                 android:layout_width="match_parent"
